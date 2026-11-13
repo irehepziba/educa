@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'easy_thumbnails',
     'social_django',
     'taggit',
+    'rest_framework',
 
     # Local apps
     'actions.apps.ActionsConfig',

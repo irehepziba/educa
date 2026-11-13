@@ -38,11 +38,13 @@ urlpatterns = [
     ),
     path('cart/', include('cart.urls', namespace='cart')),
     path('course/', include('courses.urls')),
+    path('api/', include('courses.api.urls', namespace='api')),
     path('images/', include('images.urls', namespace='images')),
     path('orders/', include('orders.urls', namespace='orders')),
     path('payment/', include('payment.urls', namespace='payment')),
     path('shop/', include('shop.urls', namespace='shop')),
     path('__debug__/', include('debug_toolbar.urls')),
+   
 ]
 
 if settings.DEBUG:
